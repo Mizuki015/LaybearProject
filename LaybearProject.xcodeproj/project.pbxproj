@@ -13,9 +13,12 @@
 		7BB360DE23AB58C900C65D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360DC23AB58C900C65D34 /* Main.storyboard */; };
 		7BB360E023AB58CB00C65D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360DF23AB58CB00C65D34 /* Assets.xcassets */; };
 		7BB360E323AB58CB00C65D34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360E123AB58CB00C65D34 /* LaunchScreen.storyboard */; };
+		7BB360EB23AB596900C65D34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360EA23AB596900C65D34 /* GoogleService-Info.plist */; };
+		D97BB92978A911F88999F98D /* Pods_LaybearProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773E05CFD43CECC9F7D41086 /* Pods_LaybearProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		773E05CFD43CECC9F7D41086 /* Pods_LaybearProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaybearProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB360D323AB58C900C65D34 /* LaybearProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaybearProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB360D623AB58C900C65D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB360D823AB58C900C65D34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		7BB360DF23AB58CB00C65D34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB360E223AB58CB00C65D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB360E423AB58CB00C65D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB360EA23AB596900C65D34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DF3634D5FD69F24C446667B /* Pods-LaybearProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaybearProject.release.xcconfig"; path = "Target Support Files/Pods-LaybearProject/Pods-LaybearProject.release.xcconfig"; sourceTree = "<group>"; };
+		D20E27B2224B14EED2B2FD44 /* Pods-LaybearProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaybearProject.debug.xcconfig"; path = "Target Support Files/Pods-LaybearProject/Pods-LaybearProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97BB92978A911F88999F98D /* Pods_LaybearProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75B9CAA5E8656DDA3964B2E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				773E05CFD43CECC9F7D41086 /* Pods_LaybearProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7BB360CA23AB58C900C65D34 = {
 			isa = PBXGroup;
 			children = (
 				7BB360D523AB58C900C65D34 /* LaybearProject */,
 				7BB360D423AB58C900C65D34 /* Products */,
+				F58990E0A0539EFC64BDC8B1 /* Pods */,
+				75B9CAA5E8656DDA3964B2E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,19 @@
 				7BB360DF23AB58CB00C65D34 /* Assets.xcassets */,
 				7BB360E123AB58CB00C65D34 /* LaunchScreen.storyboard */,
 				7BB360E423AB58CB00C65D34 /* Info.plist */,
+				7BB360EA23AB596900C65D34 /* GoogleService-Info.plist */,
 			);
 			path = LaybearProject;
+			sourceTree = "<group>";
+		};
+		F58990E0A0539EFC64BDC8B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D20E27B2224B14EED2B2FD44 /* Pods-LaybearProject.debug.xcconfig */,
+				7DF3634D5FD69F24C446667B /* Pods-LaybearProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BB360E723AB58CB00C65D34 /* Build configuration list for PBXNativeTarget "LaybearProject" */;
 			buildPhases = (
+				AF0E878D72649A2BB1B13B8D /* [CP] Check Pods Manifest.lock */,
 				7BB360CF23AB58C900C65D34 /* Sources */,
 				7BB360D023AB58C900C65D34 /* Frameworks */,
 				7BB360D123AB58C900C65D34 /* Resources */,
+				BA445DE21F5BE9BB4D428A73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +157,54 @@
 			files = (
 				7BB360E323AB58CB00C65D34 /* LaunchScreen.storyboard in Resources */,
 				7BB360E023AB58CB00C65D34 /* Assets.xcassets in Resources */,
+				7BB360EB23AB596900C65D34 /* GoogleService-Info.plist in Resources */,
 				7BB360DE23AB58C900C65D34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF0E878D72649A2BB1B13B8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaybearProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA445DE21F5BE9BB4D428A73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaybearProject/Pods-LaybearProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaybearProject/Pods-LaybearProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaybearProject/Pods-LaybearProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BB360CF23AB58C900C65D34 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		7BB360E823AB58CB00C65D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20E27B2224B14EED2B2FD44 /* Pods-LaybearProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +373,7 @@
 		};
 		7BB360E923AB58CB00C65D34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF3634D5FD69F24C446667B /* Pods-LaybearProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

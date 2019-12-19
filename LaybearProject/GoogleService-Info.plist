@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>413660553412-01jelou2vs91pitdrvs1e6m837hkemrv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.413660553412-01jelou2vs91pitdrvs1e6m837hkemrv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCcJ1CIK83Ku5wYlL8QPRIVJ-q_r5-P98Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>413660553412</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.LaybearProject</string>
+	<key>PROJECT_ID</key>
+	<string>laybearproject</string>
+	<key>STORAGE_BUCKET</key>
+	<string>laybearproject.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:413660553412:ios:b539dcbe44c678ece3a991</string>
+	<key>DATABASE_URL</key>
+	<string>https://laybearproject.firebaseio.com</string>
+</dict>
+</plist>
