@@ -8,4 +8,6 @@ target 'LaybearProject' do
   # Pods for LaybearProject
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+
 end
