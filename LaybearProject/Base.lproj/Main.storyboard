@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WYI-Ga-M2f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cCK-L3-W3b">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Timeline-->
         <scene sceneID="FTU-vM-Nme">
             <objects>
                 <viewController id="WYI-Ga-M2f" customClass="HomeViewController" customModule="LaybearProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,12 +65,12 @@
                                                     <rect key="frame" x="10" y="11" width="80" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXb-s3-rTo">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXb-s3-rTo" customClass="IndexButton" customModule="LaybearProject" customModuleProvider="target">
                                                     <rect key="frame" x="354" y="11" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="解"/>
                                                 </button>
-                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-kX-abI">
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-kX-abI" customClass="IndexButton2" customModule="LaybearProject" customModuleProvider="target">
                                                     <rect key="frame" x="354" y="59" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="幸"/>
@@ -84,6 +84,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Lvw-48-ijP"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="bubble.left.and.bubble.right.fill" catalog="system" selectedImage="bubble.left.and.bubble.right.fill" id="lXS-2a-ZBp"/>
                     <navigationItem key="navigationItem" id="f9A-E1-fvG"/>
                     <connections>
                         <outlet property="tableView" destination="Nxm-U6-7dd" id="brl-L8-I2y"/>
@@ -92,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrc-bk-4tG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
+            <point key="canvasLocation" x="1974" y="-265"/>
         </scene>
         <!--My Page View Controller-->
         <scene sceneID="I2Q-zt-YFY">
@@ -145,12 +146,70 @@
                     <connections>
                         <outlet property="iconImageView2" destination="QrC-ge-THB" id="9mW-Ql-zjc"/>
                         <outlet property="textView" destination="GHa-O0-XqZ" id="qPu-Ec-Ult"/>
-                        <segue destination="WYI-Ga-M2f" kind="modal" identifier="toHome" modalPresentationStyle="fullScreen" id="2dc-kX-t9H"/>
+                        <segue destination="cCK-L3-W3b" kind="modal" identifier="toHome" modalPresentationStyle="fullScreen" id="2dc-kX-t9H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SY6-4E-Y28" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="113.83928571428571"/>
+            <point key="canvasLocation" x="2957.971014492754" y="-264.50892857142856"/>
+        </scene>
+        <!--Icon-->
+        <scene sceneID="Bq0-9h-LWI">
+            <objects>
+                <viewController id="A7N-Ck-9ba" customClass="EditIconViewController" customModule="LaybearProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O9N-8g-5bp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-s1-5Fw">
+                                <rect key="frame" x="87" y="92" width="252" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibR-K7-1RV">
+                                <rect key="frame" x="87" y="408" width="252" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="アルバム"/>
+                                <connections>
+                                    <action selector="runAlbum:" destination="A7N-Ck-9ba" eventType="touchUpInside" id="eoV-WC-1Wd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="m6M-Yw-4hB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Icon" image="person.crop.rectangle.fill" catalog="system" selectedImage="person.crop.rectangle.fill" id="wif-tg-VBd"/>
+                    <navigationItem key="navigationItem" id="PCS-cv-3CP"/>
+                    <connections>
+                        <outlet property="imageView" destination="eNy-s1-5Fw" id="uq1-if-xR2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGM-SR-QDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.913043478261" y="515.625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WlO-9n-0xY">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cCK-L3-W3b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fh7-7s-gPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WYI-Ga-M2f" kind="relationship" relationship="viewControllers" id="ou0-2J-m2q"/>
+                        <segue destination="A7N-Ck-9ba" kind="relationship" relationship="viewControllers" id="z15-Zz-m7N"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2r-UN-Pfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bubble.left.and.bubble.right.fill" catalog="system" width="64" height="48"/>
+        <image name="person.crop.rectangle.fill" catalog="system" width="64" height="46"/>
+    </resources>
 </document>

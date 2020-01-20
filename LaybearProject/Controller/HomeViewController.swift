@@ -95,7 +95,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         // 画像の大きさを設定
         image.frame = CGRect(x: 9, y: 103, width: 80, height: 80)
         // 画像を設定
-        image.image = UIImage(named: "クマの後ろ姿")
+//        image.image = UIImage.ini
         // 角を丸くする
         image.layer.cornerRadius = 80 * 0.5
         image.clipsToBounds = true
@@ -104,27 +104,27 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let label = cell.viewWithTag(2) as! UILabel
         label.text = post.text
         
-//        // cell内の「解」ボタンを設定
-//        let didClickUSButton = cell.viewWithTag(3) as! UIButton
-//        didClickUSButton.addTarget(self, action: #selector(tapHopeButton(_:)), for: .touchUpInside)
-//        didClickUSButton.tag = indexPath.row
-//        
-//        // cell内の「幸」ボタンを設定
-//        let didClickHopeButton = cell.viewWithTag(4) as! UIButton
-//        didClickHopeButton.addTarget(self, action: #selector(tapHopeButton(_:)), for: .touchUpInside)
-//        didClickHopeButton.tag = indexPath.row
+        // cell内の「解」ボタンを設定
+        let didClickUSButton = cell.viewWithTag(3) as! IndexButton
+        didClickUSButton.addTarget(self, action: #selector(tapUSButton(_:)), for: .touchUpInside)
+        didClickUSButton.index = indexPath.row
+        
+        // cell内の「幸」ボタンを設定
+        let didClickHopeButton = cell.viewWithTag(4) as! IndexButton2
+        didClickHopeButton.addTarget(self, action: #selector(tapHopeButton(_:)), for: .touchUpInside)
+        didClickHopeButton.index2 = indexPath.row
         
         // セルを返す
         return cell
     }
     
     // 解ボタンの設定
-    @objc func tapUSButton(_ sender: UIButton) {
+    @objc func tapUSButton(_ sender: IndexButton) {
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
-//            sender.tintColor = UIColor.blackColor()
+            sender.tintColor = UIColor.systemRed
             sender.backgroundColor = .systemRed
-//            sender.setTitleColor(UIColor.white, for: UIControl.State.normal)
+            sender.setTitleColor(UIColor.white, for: UIControl.State.normal)
         } else {
             sender.backgroundColor = .white
             sender.setTitleColor(UIColor.systemBlue, for: .normal)
@@ -132,12 +132,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     // 幸ボタンにの設定
-    @objc func tapHopeButton(_ sender: UIButton) {
+    @objc func tapHopeButton(_ sender: IndexButton2) {
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
-//            sender.tintColor = UIColor.blackColor()
-            sender.backgroundColor = .systemPink
-//            sender.setTitleColor(UIColor.white, for: UIControl.State.normal
+            sender.tintColor = UIColor.systemYellow
+            sender.backgroundColor = .systemYellow
+            sender.setTitleColor(UIColor.white, for: UIControl.State.normal)
         } else {
             sender.backgroundColor = .white
             sender.setTitleColor(UIColor.systemBlue, for: .normal)

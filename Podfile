@@ -9,5 +9,6 @@ target 'LaybearProject' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 
 end
