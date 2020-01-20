@@ -3,31 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B32EE8123C44BDD00AF6AA5 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32EE8023C44BDD00AF6AA5 /* AccountViewController.swift */; };
+		7B32EE8323D03BFC00AF6AA5 /* EditIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32EE8223D03BFC00AF6AA5 /* EditIconViewController.swift */; };
+		7B32EE8523D18A4F00AF6AA5 /* IndexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32EE8423D18A4F00AF6AA5 /* IndexButton.swift */; };
+		7B69E89323D1928A005072BF /* IndexButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69E89223D1928A005072BF /* IndexButton2.swift */; };
 		7BB360D723AB58C900C65D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB360D623AB58C900C65D34 /* AppDelegate.swift */; };
 		7BB360D923AB58C900C65D34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB360D823AB58C900C65D34 /* SceneDelegate.swift */; };
-		7BB360DB23AB58C900C65D34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB360DA23AB58C900C65D34 /* ViewController.swift */; };
 		7BB360DE23AB58C900C65D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360DC23AB58C900C65D34 /* Main.storyboard */; };
 		7BB360E023AB58CB00C65D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360DF23AB58CB00C65D34 /* Assets.xcassets */; };
 		7BB360E323AB58CB00C65D34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360E123AB58CB00C65D34 /* LaunchScreen.storyboard */; };
 		7BB360EB23AB596900C65D34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BB360EA23AB596900C65D34 /* GoogleService-Info.plist */; };
+		7BB360EE23AC96BC00C65D34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB360ED23AC96BC00C65D34 /* HomeViewController.swift */; };
+		7BB360F223AC971500C65D34 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB360F123AC971500C65D34 /* MyPageViewController.swift */; };
+		7BB360F523AC9ED100C65D34 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB360F423AC9ED100C65D34 /* Post.swift */; };
 		D97BB92978A911F88999F98D /* Pods_LaybearProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773E05CFD43CECC9F7D41086 /* Pods_LaybearProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		773E05CFD43CECC9F7D41086 /* Pods_LaybearProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaybearProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B32EE8023C44BDD00AF6AA5 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		7B32EE8223D03BFC00AF6AA5 /* EditIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIconViewController.swift; sourceTree = "<group>"; };
+		7B32EE8423D18A4F00AF6AA5 /* IndexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexButton.swift; sourceTree = "<group>"; };
+		7B69E89223D1928A005072BF /* IndexButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexButton2.swift; sourceTree = "<group>"; };
 		7BB360D323AB58C900C65D34 /* LaybearProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaybearProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB360D623AB58C900C65D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB360D823AB58C900C65D34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BB360DA23AB58C900C65D34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BB360DD23AB58C900C65D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BB360DF23AB58CB00C65D34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BB360E223AB58CB00C65D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB360E423AB58CB00C65D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BB360EA23AB596900C65D34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7BB360ED23AC96BC00C65D34 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7BB360F123AC971500C65D34 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		7BB360F423AC9ED100C65D34 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7DF3634D5FD69F24C446667B /* Pods-LaybearProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaybearProject.release.xcconfig"; path = "Target Support Files/Pods-LaybearProject/Pods-LaybearProject.release.xcconfig"; sourceTree = "<group>"; };
 		D20E27B2224B14EED2B2FD44 /* Pods-LaybearProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaybearProject.debug.xcconfig"; path = "Target Support Files/Pods-LaybearProject/Pods-LaybearProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,16 +85,38 @@
 		7BB360D523AB58C900C65D34 /* LaybearProject */ = {
 			isa = PBXGroup;
 			children = (
+				7BB360F323AC9E2300C65D34 /* Objects */,
+				7BB360EC23AC969F00C65D34 /* Controller */,
 				7BB360D623AB58C900C65D34 /* AppDelegate.swift */,
 				7BB360D823AB58C900C65D34 /* SceneDelegate.swift */,
-				7BB360DA23AB58C900C65D34 /* ViewController.swift */,
 				7BB360DC23AB58C900C65D34 /* Main.storyboard */,
 				7BB360DF23AB58CB00C65D34 /* Assets.xcassets */,
 				7BB360E123AB58CB00C65D34 /* LaunchScreen.storyboard */,
 				7BB360E423AB58CB00C65D34 /* Info.plist */,
 				7BB360EA23AB596900C65D34 /* GoogleService-Info.plist */,
+				7B32EE8423D18A4F00AF6AA5 /* IndexButton.swift */,
+				7B69E89223D1928A005072BF /* IndexButton2.swift */,
 			);
 			path = LaybearProject;
+			sourceTree = "<group>";
+		};
+		7BB360EC23AC969F00C65D34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BB360ED23AC96BC00C65D34 /* HomeViewController.swift */,
+				7BB360F123AC971500C65D34 /* MyPageViewController.swift */,
+				7B32EE8023C44BDD00AF6AA5 /* AccountViewController.swift */,
+				7B32EE8223D03BFC00AF6AA5 /* EditIconViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7BB360F323AC9E2300C65D34 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7BB360F423AC9ED100C65D34 /* Post.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		F58990E0A0539EFC64BDC8B1 /* Pods */ = {
@@ -91,7 +125,6 @@
 				D20E27B2224B14EED2B2FD44 /* Pods-LaybearProject.debug.xcconfig */,
 				7DF3634D5FD69F24C446667B /* Pods-LaybearProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,9 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BB360DB23AB58C900C65D34 /* ViewController.swift in Sources */,
+				7B32EE8523D18A4F00AF6AA5 /* IndexButton.swift in Sources */,
+				7BB360F223AC971500C65D34 /* MyPageViewController.swift in Sources */,
 				7BB360D723AB58C900C65D34 /* AppDelegate.swift in Sources */,
+				7B32EE8123C44BDD00AF6AA5 /* AccountViewController.swift in Sources */,
+				7BB360F523AC9ED100C65D34 /* Post.swift in Sources */,
 				7BB360D923AB58C900C65D34 /* SceneDelegate.swift in Sources */,
+				7BB360EE23AC96BC00C65D34 /* HomeViewController.swift in Sources */,
+				7B32EE8323D03BFC00AF6AA5 /* EditIconViewController.swift in Sources */,
+				7B69E89323D1928A005072BF /* IndexButton2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
